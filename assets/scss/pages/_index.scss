@@ -4,284 +4,302 @@
     background-position: center;
     height: 100%;
     width: 100%;
-  }
-  .banner-content{
-    text-align: right;
-    padding-top: 296px;
-    padding-bottom: 296px;
-  }
-  .banner-content h3{
-    font-size: 36px;
-    color: #650300;
-  }
-  .banner-content h1{
-    font-size: 64px;
-    color: #650300;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .banner-content a{
-    color: white;
-    background-color: #AA0601;
-    padding: 12px 6px;
+    &-content {
+      text-align: right;
+      padding-top: 296px;
+      padding-bottom: 296px;
+    }
+    &-content h3{
+      font-size: 36px;
+      color: #650300;
+    }
+    &-content h1{
+      font-size: 64px;
+      color: #650300;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &-content a{
+      color: white;
+      background-color: #AA0601;
+      padding: 12px 6px;
+    }
   }
   @media (max-width: 576px){
-    .banner-content {
-    padding-right: 14px;
-  }
-  .banner {
-    background-image: url("../images/home-header-sm.png");
+    .banner {
+      background-image: url("../images/home-header-sm.png");
+      &-content {
+        padding-right: 14px;
+        padding-top: 144px;
+        padding-bottom: 144px;
+      }
+      &-content h3{
+        font-size: 16px;
+      }
+      &-content h1{
+        font-size: 24px;
+      }
+      &-content p{
+        font-size: 20px;
+      }  
     }
-   .banner-content {
-    padding-top: 144px;
-    padding-bottom: 144px;
-      }      
-  .banner-content h3{
-    font-size: 16px;
-  }
-  .banner-content h1{
-    font-size: 24px;
-  }
-  .banner-content p{
-    font-size: 20px;
-  }  
     }
 
-  .information h2{
-    font-size: 48px;
-    color: #650300;
-    text-align: center;
-    margin-bottom: 24px;
-    font-weight: bold;
-  }
-  .info-card{
-    justify-content: space-between;
-    gap: 24px;
-  }
   .about-us{
     background-color: #FBF2F2;
     padding: 80px 0;
+    .information {
+      h2 {
+      font-size: 48px;
+      color: #650300;
+      text-align: center;
+      margin-bottom: 24px;
+      font-weight: bold;
+      }
+      .info-card{
+        justify-content: space-between;
+        gap: 24px;
+        .good-point{
+          width: 25%;
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+          h4{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #650300;
+            margin-bottom: 8px;
+          }
+          img {
+            display: block;
+            width: 83.333px;
+            margin: 0 auto;
+            margin-bottom: 24.33px;
+          }
+        }
+      }
+    }
   }
-  .good-point{
-    width: 25%;
-  }
-  .good-point h4{
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #650300;
-    margin-bottom: 8px;
-  }
-  .good-point img {
-    display: block;
-    width: 83.333px;
-    margin: 0 auto;
-    margin-bottom: 24.33px;
-  }
-  @media (max-width: 576px){
-    .about-us{
+
+  @media (max-width: 576px) {
+    .about-us {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
-    .information h2{
-        font-size: 24px;
-    }
-    .info-card{
-        flex-wrap: wrap;
-        padding: 0 13px;
-    }
-    .good-point{
-        width: 100%;
+      .information {
+        h2 {
+          font-size: 24px;
+        }
+        .info-card{
+          flex-wrap: wrap;
+          padding: 0 13px;
+        }
       }
+    }
   }
 
   .classic-glasses{
     margin-top: 80px;
     margin-bottom: 80px;
+    .glasses h2{
+      font-size: 48px;
+      color: #650300;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 48px;
+    }
+    .style {
+      width: 33.33%;
+      p{
+        font-family: "Roboto";
+        font-size: clamp(24px, 4vw, 48px);
+        font-style: italic;
+        text-align: center;
+        color: #AA0601;
+        font-weight: bold;
+      }
+      &-card{
+        gap: 24px;
+      }
+    }
   }
-  .style {
-    width: 33.33%;
-  }
-  .style p{
   
-    font-family: "Roboto";
-    font-size: clamp(24px, 4vw, 48px);
-    font-style: italic;
-    text-align: center;
-    color: #AA0601;
-    font-weight: bold;
-  }
-  .style-card{
-    gap: 24px;
-  }
-  .glasses h2{
-    font-size: 48px;
-    color: #650300;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 48px;
-  }
+  
   @media (max-width: 576px){
     .classic-glasses{
         margin-top: 40px;
         margin-bottom: 40px;
+        .glasses h2{
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+        .style-card{
+          flex-wrap: wrap;
+          padding: 0 13px;
+        .style {
+          width: 100%;
+          p {
+            font-size: 48px;
+        }
+      }
     }
-    .glasses h2{
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-    .style {
-        width: 100%;
-    }
-    .style p {
-      font-size: 48px;
-    }
-    .style-card{
-        flex-wrap: wrap;
-        padding: 0 13px;
-    }
+   }
   }
+
   .co-branding {
     background-image: url("../images/index-bg.png");
     background-size: cover;
     background-position: center;
+    .co-glasses{
+      padding-top: 80px;
+      padding-bottom: 80px;
+      h2 {
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 48px;
+      }
+      &-card img{
+        display: block;
+      }
+      &-text {
+        color: #AA0601;
+        background-color: #fff;
+        font-style: italic;
+        font-size: 48px;
+        font-family: "Roboto";
+        font-weight: bold;
+        text-align: center;
+      }
+    }
   }
-  .co-glasses{
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .co-glasses h2 {
-    color: white;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 48px;
-  }
-  .co-glasses-card img{
-    display: block;
-  }
-  .co-glasses-text {
-    color: #AA0601;
-    background-color: #fff;
-    font-style: italic;
-    font-size: 48px;
-    font-family: "Roboto";
-    font-weight: bold;
-    text-align: center;
-  }
+  
   @media (max-width: 576px){
     .co-branding {
         background-image: url("../images/index-bg-md.png");
+        .co-glasses{
+          padding-top: 40px;
+          padding-bottom: 40px;
+          h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+          }
+          &-card{
+            flex-wrap: wrap;
+            padding-left: 13px;
+            padding-right: 13px;
+            
+        }
+        }
       }
-    .co-glasses-card{
-        flex-wrap: wrap;
-        padding-left: 13px;
-        padding-right: 13px;
-    }
-    .co-glasses h2 {
-        font-size: 24px;
-        margin-bottom: 24px;
+  }
+  @media (max-width: 576px){
+  .brand {
+      width: 100%;
+      .double-a {
+      content: url("../images/home-section4-1-sm.png");
       }
-    .co-glasses{
-        padding-top: 40px;
-        padding-bottom: 40px;
+      .youth {
+      content: url("../images/home-section4-2-sm.png"); 
       }
-    .brand {
-        width: 100%;
-    }
-    .double-a {
-        content: url("../images/home-section4-1-sm.png");
-    }
-    .youth {
-        content: url("../images/home-section4-2-sm.png"); 
     }
   }
-  .customer-feedback{
-    margin-top: 80px;
-    margin-bottom: 80px;
+
+  .customer {
+    &-feedback{
+      margin-top: 80px;
+      margin-bottom: 80px;
+      h2{
+        font-size: 48px;
+        color: #650300;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 48px;
+      }
+      .guest-card{
+        gap: 24px;
+        .guest {
+          width: 25%;
+          border: 1px solid #DEE2E6;
+          box-shadow: 0px 2px 6px #00000029;
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
-  .customer-feedback h2{
-    font-size: 48px;
-    color: #650300;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 48px;
-  }
-  .guest-card{
-    gap: 24px;
-  }
-  .guest {
-    width: 25%;
-    border: 1px solid #DEE2E6;
-    box-shadow: 0px 2px 6px #00000029; /* 阴影样式 */
-  }
-  .guest-info {
+
+  .guest{
+  &-info {
     padding: 16px;
   }
   .name {
     margin-bottom: 8px;
   }
+  .command {
+    margin-bottom: 72px;
+  }
   .date {
     font-size: 14px;
     color: #707070;
   }
-  .command {
-    margin-bottom: 72px;
   }
+
   @media (max-width: 576px) {
-    .customer-feedback h2{
+    .customer-feedback {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      h2{
         font-size: 24px;
         margin-bottom: 24px;
-    }
-    .guest {
-        width: 100%;
-        margin-left: 13px;
-        margin-right: 13px;
-    }
-    .guest-card{
-        flex-wrap: wrap;
-    }
-    .customer-feedback{
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    .guest-card{
-        gap: 16px;
       }
+      .guest-card{
+        flex-wrap: wrap;
+        gap: 16px;
+        .guest {
+          margin-left: 13px;
+          margin-right: 13px;
+      }
+     }
+    }
   }
+
   .contact-us {
     background-color: #FBF2F2;
+    .contact-content{
+      padding-top: 80px;
+      padding-bottom: 80px;
+      width: 50%;
+      margin: 0 auto;
+      .contact-qa {
+        margin-bottom: 24px;
+      }
+      h2 {
+        font-size: 48px;
+        color: #650300;
+        text-align: center;
+        margin-bottom: 48px;
+        font-weight: bold;
+      }
+      .contact-form {
+        margin-bottom: 16px;
+        label{
+          margin-bottom: 8px;
+          display: block;
+        }
+        input {
+          width: 100%;
+          height: 36px;
+        }
+      }
+    }
   }
-  .contact-content{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width: 50%;
-    margin: 0 auto;
-  }
-  .contact-content h2{
-    font-size: 48px;
-    color: #650300;
-    text-align: center;
-    margin-bottom: 48px;
-    font-weight: bold;
-  }
-  .contact-form {
-    margin-bottom: 16px;
-  }
-  .contact-form label{
-    margin-bottom: 8px;
-    display: block;
-  }
-  .contact-form input{
-    width: 100%;
-    height: 36px;
-  }
+
   .inline-elements {
     display: inline-block;
     vertical-align: middle;
-  }
-  .contact-qa {
-    margin-bottom: 24px;
   }
   .textarea {
     width: 100%;
@@ -297,30 +315,33 @@
     display: block;
     margin-top: 48px;
     margin-bottom: 80px;
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
   }
+
   @media (max-width: 576px) {
-    .contact-content h2{
-        font-size: 24px;
-        margin-bottom: 24px;
-      }
+    .contact-us{
       .contact-content{
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 13px;
         padding-right: 13px;
         width: 100%;
+        h2{
+          font-size: 24px;
+          margin-bottom: 24px;
+        }
+        .agreement {
+          display: flex;
+          align-items: start;
+          input{
+            width: 24px;
+            height: 24px;
+          }
+        }
       }
-      .btn{
-        width: 100%;
-        margin-top: 24px;
-        margin-bottom: 40px;
-      }
-      .agreement {
-        display: flex;
-        align-items: start;
-      }
-      .agreement input{
-        width: 24px;
-        height: 24px;
-      }
+    }
   }
