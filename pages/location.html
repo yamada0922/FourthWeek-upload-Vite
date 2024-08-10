@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="all.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>optical</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="location">
+        <div class="container">
+            <div class="location-title">
+                <h2>門市據點</h2>
+            </div>
+            <div class="location-select">
+                <label for="dropdown">選擇地區</label>
+                <select id="dropdown" name="options">
+                <option value="option1">台北市</option>
+                <option value="option2">新北市</option>
+                <option value="option3">桃園市</option>
+                <option value="option4">新竹市</option>
+                </select>
+            </div>
+            <div class="location-card">
+                <ul>
+                    <li>
+                        <img class="location-img" src="../assets/images/store-1.png" alt="taipei-store">
+                        <h4 class="location-name">台北中山旗艦店</h4>
+                        <div class="tel">
+                        <a href="tel:+(02)000-1234">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#212529"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z"/></svg>
+                        </a>
+                        <p>電話：(02)000-1234</p></div>
+                        <p>營業時間：10:00-21:00</p>
+                        <p>地址：台北市中山區南京東路25巷2-1號</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

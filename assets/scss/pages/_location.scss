@@ -1,0 +1,35 @@
+.location {
+    margin-top: 96px;
+    margin-bottom: 80px;
+    &-title {
+        font-size: 48px;
+        font-weight: bold;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+        margin-bottom: 32px;
+    }
+    &-select {
+        margin-bottom: 40px;
+        label {
+        font-size: 24px;
+        padding-right: 16px;
+    }
+        select {
+        color: #495057;
+        font-size: 18px;
+        height: 36px;
+        width: 304px;
+        background-color: transparent; /* 背景透明 */
+        border: 1px solid #CED4DA;
+    }
+    }
+}
+.location-card {
+    li{
+        width: calc(33% - 24px);
+    }
+    svg {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
