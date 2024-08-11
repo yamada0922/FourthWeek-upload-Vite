@@ -1,6 +1,6 @@
 .product-list {
     li {
-        width: 33%;
+        width: 33.333%;
         text-align: center;
         padding: 24px 0;
         border: 1px solid #DCDCDC;
@@ -57,18 +57,20 @@
     }
 }
 .card-list {
-    gap: 24px;
+    // gap: 24px;
     flex-wrap: wrap;
 }
 .card {
-    width: calc(25% - 24px);
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
     @media (max-width: 576px){
         width: 100%;
       }
     &-about {
         justify-content: space-between;
         font-family: "Roboto";
-        font-size: 24px;
+        font-size: clamp(12px, 2vw, 24px);
         .card-price {
             color: #AA0601;
             font-weight: 500;
