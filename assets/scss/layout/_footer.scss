@@ -34,7 +34,6 @@
   .tel {
     margin-bottom: 8px;
     svg {
-      width: 18px;
       margin-right: 11px;
     }
   }
@@ -42,7 +41,6 @@
     align-items: center;
   }
   .mail svg{
-    width: 20px;
     margin-right: 10px;
   }
 }
@@ -78,7 +76,15 @@
       margin-bottom: 24px;
       h3 {
         font-size: 16px;
-    }
+    } 
+      .tel svg{
+        width: 18px;
+        height: 18px;
+      }
+      .mail svg {
+        width: 20px;
+        height: 16px;
+      }
   }
   .side-social {
       gap: 8px;
